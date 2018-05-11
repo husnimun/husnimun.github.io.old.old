@@ -68,8 +68,13 @@ const ProjectCard = Card.extend`
   margin-bottom: 32px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+
   @media screen and (max-width: 400px) {
     grid-template-columns: 1fr;
+    border-radius: 0;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    margin-bottom: 24px;
   }
 `
 
@@ -98,8 +103,12 @@ const ProjectImage = styled.div`
 
 const ProjectDescription = styled.div`
   color: #444;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.4;
+
+  @media screen and (min-width: 600px) {
+    font-size: 18px;
+  }
 `
 
 const Pen = styled.div`
