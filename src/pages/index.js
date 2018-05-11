@@ -1,6 +1,5 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import styles from './index.module.css'
 import styled from 'styled-components'
 import background from '../images/bg.jpg'
 
@@ -28,49 +27,81 @@ const About = styled.div`
     font-size: 22px;
   }
 `
+
+const AboutContent = styled.div``
+
 const Contact = styled.div`
   padding-top: 32px;
   padding-bottom: 32px;
 `
 
+const Social = styled.div``
+
+const SocialList = styled.ul`
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  text-align: center;
+`
+
+const SocialListItem = styled.li`
+  display: inline-block;
+  font-size: 28px;
+  list-style: none;
+  margin-left: 6px;
+  margin-right: 6px;
+
+  > a {
+    color: #a6a6a6;
+    transition: color 300ms ease;
+  }
+
+  > a:hover {
+    color: #eee;
+  }
+`
+
+const Email = styled.div`
+  color: #c2c2c2;
+  text-align: center;
+`
+
 const IndexPage = () => (
   <Wrapper>
     <About>
-      <div className={styles['about-content']}>
+      <AboutContent>
         <p>
           Hello, my name is Husni Munaya.<br />I'm a front-end developer from
           Indonesia
         </p>
-      </div>
+      </AboutContent>
     </About>
     <Contact>
-      <div className={styles.social}>
-        <ul className={styles['social-list']}>
-          <li className={styles['social-list-item']}>
+      <Social>
+        <SocialList>
+          <SocialListItem>
             <a href="https://www.linkedin.com/in/husni-munaya/" target="_blank">
               <i className="fab fa-linkedin" />
             </a>
-          </li>
-          <li className={styles['social-list-item']}>
+          </SocialListItem>
+          <SocialListItem>
             <a href="https://github.com/husnimun/" target="_blank">
               <i className="fab fa-github" />
             </a>
-          </li>
-          <li className={styles['social-list-item']}>
+          </SocialListItem>
+          <SocialListItem>
             <a href="http://codepen.io/husnimun/" target="_blank">
               <i className="fab fa-codepen" />
             </a>
-          </li>
-          <li className={styles['social-list-item']}>
+          </SocialListItem>
+          <SocialListItem>
             <a href="https://twitter.com/husnimun" target="_blank">
               <i className="fab fa-twitter" />
             </a>
-          </li>
-        </ul>
-      </div>
-      <div className={styles.email}>
-        <span>husnimunaya@gmail.com</span>
-      </div>
+          </SocialListItem>
+        </SocialList>
+      </Social>
+      <Email>husnimunaya@gmail.com</Email>
     </Contact>
   </Wrapper>
 )
