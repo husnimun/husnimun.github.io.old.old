@@ -76,7 +76,7 @@ const IndexPage = () => (
         </p>
         <p>
           You can take a look at my{' '}
-          <StyledAnchor light href="https://google.com">
+          <StyledAnchor light href="/">
             Resume
           </StyledAnchor>, or see my{' '}
           <StyledLink light to="/portfolio">

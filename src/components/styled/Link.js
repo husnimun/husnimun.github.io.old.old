@@ -12,10 +12,10 @@ export const StyledAnchor = styled.a`
     content: '';
     position: absolute;
     width: calc(100%);
-    height: 4px;
-    border-radius: 4px;
+    height: 3px;
+    border-radius: 2px;
     background: ${props =>
-      props.light ? 'rgba(255, 255, 255, 0.8)' : 'rgba(72, 57, 120, 0.8);'};
+      props.light ? 'rgba(255, 255, 255, 0.8)' : 'rgba(72, 57, 120, 0.6);'};
     bottom: 0px;
     z-index: -1;
     left: 0;

@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 import { StyledLink, StyledAnchor } from '../components/styled/Link'
+import Footer from '../components/footer'
 import indohunImg from '../images/project/indohun.png'
 import bpomImg from '../images/project/bpom.png'
 import travelBuddyImg from '../images/project/tb.png'
@@ -40,6 +41,7 @@ const ProjectCard = Card.extend`
 
 const ProjectTitle = styled.h2`
   margin-top: 0;
+  margin-bottom: 12px;
   font-size: 32px;
   color: #222;
   font-weight: normal;
@@ -53,8 +55,20 @@ const Grid = styled.div`
 `
 
 const Projects = styled.div`
-  padding-top: 64px;
-  padding-bottom: 64px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+`
+
+const ProjectsHeader = styled.div`
+  max-width: 600px;
+  margin-bottom: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+`
+
+const ProjectsTitle = styled.h1`
+  margin-bottom: 12px;
 `
 
 const Project = styled.div`
@@ -83,8 +97,6 @@ const Pen = styled.div`
   }
 `
 
-const ProjectsTitle = styled.h1``
-
 const SecondPage = () => (
   <Wrapper>
     <Hero>
@@ -93,14 +105,19 @@ const SecondPage = () => (
 
     <Grid>
       <Projects>
-        <ProjectsTitle>Recent Works</ProjectsTitle>
-        <p>Here are some of my past works.</p>
+        <ProjectsHeader>
+          <ProjectsTitle>Recent Works</ProjectsTitle>
+          <p>
+            I enjoy working on the web stack, especially the front-end stack.
+            Here are some of my recent works.
+          </p>
+        </ProjectsHeader>
         <ProjectCard>
           <ProjectImage>
             <img src={travelBuddyImg} />
           </ProjectImage>
           <Project>
-            <ProjectTitle>TravedlBuddy</ProjectTitle>
+            <ProjectTitle>TravelBuddy</ProjectTitle>
             <ProjectDescription>
               <p>
                 TravelBuddy is a matchmaking platform between traveler and
@@ -153,18 +170,20 @@ const SecondPage = () => (
       </Projects>
 
       <Projects>
-        <ProjectsTitle>Codepen Gallery</ProjectsTitle>
-        <p>
-          I love experimenting witho CSS and JavaSciprt. Here are some of my
-          selected Pen! You can see the rests on my{' '}
-          <StyledAnchor href="https://codepen.io/husnimun">
-            Codepen.
-          </StyledAnchor>
-        </p>
+        <ProjectsHeader>
+          <ProjectsTitle>Codepen Gallery</ProjectsTitle>
+          <p>
+            I love experimenting with CSS and JavaScript. Here are some of my
+            selected Pen! You can see the rests on my{' '}
+            <StyledAnchor href="https://codepen.io/husnimun" target="_blank">
+              Codepen.
+            </StyledAnchor>
+          </p>
+        </ProjectsHeader>
         <ProjectCard>
           <Pen>
             <iframe
-              height="265"
+              height="300"
               scrolling="no"
               title="Animated Hamburger Menu 2"
               src="//codepen.io/husnimun/embed/GJgjbE/?height=265&theme-id=light&default-tab=result&embed-version=2"
@@ -185,7 +204,7 @@ const SecondPage = () => (
         <ProjectCard>
           <Pen>
             <iframe
-              height="265"
+              height="300"
               scrolling="no"
               title="Animated Hamburger Menu"
               src="//codepen.io/husnimun/embed/pJvEeL/?height=265&theme-id=light&default-tab=result&embed-version=2"
@@ -259,27 +278,9 @@ const SecondPage = () => (
             </iframe>
           </Pen>
         </ProjectCard>
-        <ProjectCard>
-          <Pen>
-            <iframe
-              height="480"
-              scrolling="no"
-              title="Product Card"
-              src="//codepen.io/husnimun/embed/LmEqwg/?height=265&theme-id=light&default-tab=result&embed-version=2"
-              frameborder="no"
-              allowtransparency="true"
-              allowfullscreen="true"
-            >
-              See the Pen{' '}
-              <a href="https://codepen.io/husnimun/pen/LmEqwg/">Product Card</a>{' '}
-              by Husni Munaya (<a href="https://codepen.io/husnimun">
-                @husnimun
-              </a>) on <a href="https://codepen.io">CodePen</a>.
-            </iframe>
-          </Pen>
-        </ProjectCard>
       </Projects>
     </Grid>
+    <Footer />
   </Wrapper>
 )
 
