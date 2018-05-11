@@ -21,7 +21,6 @@ const About = styled.div`
   justify-content: center;
   font-size: 18px;
   text-align: center;
-  color: #2b2b2b;
 
   @media screen and (min-width: 600px) {
     font-size: 22px;

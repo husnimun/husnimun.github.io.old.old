@@ -187,9 +187,9 @@ const SecondPage = () => (
               scrolling="no"
               title="Animated Hamburger Menu 2"
               src="//codepen.io/husnimun/embed/GJgjbE/?height=265&theme-id=light&default-tab=result&embed-version=2"
-              frameborder="no"
-              allowtransparency="true"
-              allowfullscreen="true"
+              frameBorder="no"
+              allowTransparency="true"
+              allowFullScreen="true"
             >
               See the Pen{' '}
               <a href="https://codepen.io/husnimun/pen/GJgjbE/">
@@ -208,9 +208,9 @@ const SecondPage = () => (
               scrolling="no"
               title="Animated Hamburger Menu"
               src="//codepen.io/husnimun/embed/pJvEeL/?height=265&theme-id=light&default-tab=result&embed-version=2"
-              frameborder="no"
-              allowtransparency="true"
-              allowfullscreen="true"
+              frameBorder="no"
+              allowTransparency="true"
+              allowFullScreen="true"
             >
               See the Pen{' '}
               <a href="https://codepen.io/husnimun/pen/pJvEeL/">
@@ -229,9 +229,9 @@ const SecondPage = () => (
               scrolling="no"
               title="Sunflower"
               src="//codepen.io/husnimun/embed/BNyzEK/?height=265&theme-id=light&default-tab=result&embed-version=2"
-              frameborder="no"
-              allowtransparency="true"
-              allowfullscreen="true"
+              frameBorder="no"
+              allowTransparency="true"
+              allowFullScreen="true"
             >
               See the Pen{' '}
               <a href="https://codepen.io/husnimun/pen/BNyzEK/">Sunflower</a> by
@@ -247,9 +247,9 @@ const SecondPage = () => (
               scrolling="no"
               title="Gallery Grid"
               src="//codepen.io/husnimun/embed/bMVWQy/?height=265&theme-id=light&default-tab=result&embed-version=2"
-              frameborder="no"
-              allowtransparency="true"
-              allowfullscreen="true"
+              frameBorder="no"
+              allowTransparency="true"
+              allowFullScreen="true"
             >
               See the Pen{' '}
               <a href="https://codepen.io/husnimun/pen/bMVWQy/">Gallery Grid</a>{' '}
@@ -266,9 +266,9 @@ const SecondPage = () => (
               scrolling="no"
               title="Random dots"
               src="//codepen.io/husnimun/embed/eJmLRR/?height=265&theme-id=light&default-tab=result&embed-version=2"
-              frameborder="no"
-              allowtransparency="true"
-              allowfullscreen="true"
+              frameBorder="no"
+              allowTransparency="true"
+              allowFullScreen="true"
             >
               See the Pen{' '}
               <a href="https://codepen.io/husnimun/pen/eJmLRR/">Random dots</a>{' '}
