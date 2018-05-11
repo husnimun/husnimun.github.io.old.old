@@ -18,7 +18,8 @@ const Footer = () => (
       Github Pages
     </StyledAnchor>.<br />Statically generated with{' '}
     <StyledAnchor href="https://www.gatsbyjs.org/">GatsbyJS</StyledAnchor> 🚀
-    and styled with{' '}
+    <br />
+    Styled with{' '}
     <StyledAnchor href="https://www.styled-components.com/">
       Styled Components
     </StyledAnchor>{' '}

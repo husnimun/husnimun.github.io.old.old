@@ -12,6 +12,8 @@ const Wrapper = styled.div`
 `
 
 const Hero = styled.div`
+  padding-left: 16px;
+  padding-right: 16px;
   background-color: #221c2f;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23473d5b' fill-opacity='0.4'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   min-height: 400px;
@@ -23,28 +25,19 @@ const Hero = styled.div`
 const HeroTitle = styled.h1`
   margin-top: 0;
   color: #fff;
-  font-size: 60px;
+  font-size: 48px;
   text-align: center;
+
+  @media screen and (min-width: 500px) {
+    font-size: 60px;
+  }
 `
 
 const Card = styled.div`
   background-color: #fff;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  border-radius: 8px;
-  padding: 24px 32px;
-`
-
-const ProjectCard = Card.extend`
-  margin-bottom: 32px;
-  display: flex;
-`
-
-const ProjectTitle = styled.h2`
-  margin-top: 0;
-  margin-bottom: 12px;
-  font-size: 32px;
-  color: #222;
-  font-weight: normal;
+  border-radius: 4px;
+  padding: 24px 24px;
 `
 
 const Grid = styled.div`
@@ -71,15 +64,33 @@ const ProjectsTitle = styled.h1`
   margin-bottom: 12px;
 `
 
+const ProjectCard = Card.extend`
+  margin-bottom: 32px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  flex-wrap: wrap;
+`
+
+const ProjectTitle = styled.h2`
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 32px;
+  color: #222;
+  font-weight: normal;
+`
+
 const Project = styled.div`
-  flex: 1;
+  padding: 12px 0;
 `
 
 const ProjectImage = styled.div`
-  flex: 1;
+  text-align: center;
+  padding-left: 16px;
+  padding-right: 16px;
 
   img {
-    max-width: 100%;
+    width: 100%;
+    max-width: 500px;
   }
 `
 
@@ -262,7 +273,7 @@ const SecondPage = () => (
         <ProjectCard>
           <Pen>
             <iframe
-              height="500"
+              height="340"
               scrolling="no"
               title="Random dots"
               src="//codepen.io/husnimun/embed/eJmLRR/?height=265&theme-id=light&default-tab=result&embed-version=2"
