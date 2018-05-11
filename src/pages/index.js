@@ -1,33 +1,7 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import styled from 'styled-components'
 import background from '../images/bg.jpg'
-
-const StyledAnchor = styled.a`
-  position: relative;
-  color: #2b2b2b;
-  text-decoration: none;
-  transition: 300ms ease;
-  z-index: 100;
-
-  &:before {
-    content: '';
-    position: absolute;
-    width: calc(100%);
-    height: 6px;
-    border-radius: 4px;
-    background: rgba(255, 255, 255, 0.6);
-    bottom: 2px;
-    z-index: -1;
-    left: 0;
-  }
-
-  &:hover {
-    color: #5f5f5f;
-  }
-`
-
-const StyledLink = StyledAnchor.withComponent(Link)
+import { StyledAnchor, StyledLink } from '../components/styled/Link'
 
 const Wrapper = styled.div`
   display: flex;
@@ -102,8 +76,12 @@ const IndexPage = () => (
         </p>
         <p>
           You can take a look at my{' '}
-          <StyledAnchor href="https://google.com">Resume</StyledAnchor>, or see
-          my <StyledLink to="/portfolio">Portfolio.</StyledLink>
+          <StyledAnchor light href="https://google.com">
+            Resume
+          </StyledAnchor>, or see my{' '}
+          <StyledLink light to="/portfolio">
+            Portfolio.
+          </StyledLink>
         </p>
       </AboutContent>
     </About>
