@@ -75,7 +75,11 @@ const IndexPage = () => (
         </p>
         <p>
           You can take a look at my{' '}
-          <StyledAnchor light href="/">
+          <StyledAnchor
+            light
+            href="https://www.dropbox.com/s/5ic38ovf1h0fnv7/Resume-Husni-Munaya.pdf?dl=0"
+            target="_blank"
+          >
             Resume
           </StyledAnchor>, or see my{' '}
           <StyledLink light to="/portfolio">
