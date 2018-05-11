@@ -1,0 +1,30 @@
+.social-list {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+.social-list-item {
+  display: inline-block;
+  font-size: 28px;
+  list-style: none;
+}
+
+.social-list-item a {
+  color: #a6a6a6;
+  transition: color 300ms ease;
+}
+
+.social-list-item a:hover {
+  color: #eee;
+}
+
+.social-list-item:not(:first-child) {
+  margin-left: 20px;
+}
+
+.email {
+  color: #c2c2c2;
+  text-align: center;
+}
