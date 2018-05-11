@@ -142,11 +142,10 @@ const SecondPage = () => (
             <ProjectTitle>TravelBuddy</ProjectTitle>
             <ProjectDescription>
               <p>
-                TravelBuddy is a matchmaking platform between traveler and
-                travel guide. In this project, I was involved in two months
-                design sprint as a full-stack web developer, working on both
-                back end and front end. The project is built with Laravel and
-                Vue.
+                TravelBuddy is a matchmaking platform for traveler and travel
+                guide. In this project, I was involved in two months design
+                sprint as a full-stack web developer, working on both back end
+                and front end. The project is built with Laravel and Vue.
               </p>
               <StyledAnchor href="https://travelbuddy.id" target="_blank">
                 View Project
