@@ -67,8 +67,10 @@ const ProjectsTitle = styled.h1`
 const ProjectCard = Card.extend`
   margin-bottom: 32px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  @media screen and (max-width: 400px) {
+    grid-template-columns: 1fr;
+  }
 `
 
 const ProjectTitle = styled.h2`
