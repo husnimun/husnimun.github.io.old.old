@@ -7,7 +7,7 @@ const StyledFooter = styled.footer`
   padding: 32px;
   background-color: #dbdbdb;
   color: #282a36;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.7;
 `
 
