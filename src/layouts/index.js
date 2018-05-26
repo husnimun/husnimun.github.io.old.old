@@ -1,13 +1,36 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
+import styled, { css } from 'styled-components'
+import { dark } from '../styles/Color'
 
 import Header from '../components/header'
 import Footer from '../components/footer'
 import './normalize.css'
 import './index.css'
 
-const Layout = ({ children, data }) => (
+const OuterPadding = ({ isHome }) => {
+  return css`
+    padding: ${isHome ? '8px' : '0'};
+    @media screen and (min-width: 768px) {
+      padding: ${isHome ? '12px' : '0'};
+    }
+  `
+}
+
+const OuterWrapper = styled.div`
+  ${OuterPadding};
+  transition: 300ms ease;
+  min-height: 500px;
+  height: 100vh;
+  background: linear-gradient(180deg, #6c5add 0%, #36c9e8 100%);
+`
+const InnerWrapper = styled.div`
+  background-color: ${dark};
+  height: 100%;
+`
+
+const Layout = ({ children, data, location }) => (
   <div>
     <Helmet
       title={data.site.siteMetadata.title}
@@ -20,7 +43,7 @@ const Layout = ({ children, data }) => (
     <Helmet>
       <link
         rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=PT+Sans|Merriweather:700"
+        href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Merriweather:700"
       />
       <script
         defer
@@ -29,7 +52,12 @@ const Layout = ({ children, data }) => (
         crossorigin="anonymous"
       />
     </Helmet>
-    {children()}
+    <OuterWrapper isHome={location.pathname === '/'}>
+      <InnerWrapper>
+        <Header />
+        {children()}
+      </InnerWrapper>
+    </OuterWrapper>
   </div>
 )
 

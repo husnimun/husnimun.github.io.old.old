@@ -3,9 +3,11 @@ import Link from 'gatsby-link'
 import styled from 'styled-components'
 import { StyledLink, StyledAnchor } from '../components/styled/Link'
 import Footer from '../components/footer'
+import Heading from '../components/typography/Heading'
 import indohunImg from '../images/project/indohun.png'
 import bpomImg from '../images/project/bpom.png'
 import travelBuddyImg from '../images/project/tb.png'
+import { dark } from '../styles/Color'
 
 const Wrapper = styled.div`
   background-color: #f2f2f2;
@@ -14,22 +16,20 @@ const Wrapper = styled.div`
 const Hero = styled.div`
   padding-left: 16px;
   padding-right: 16px;
-  background-color: #221c2f;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23473d5b' fill-opacity='0.4'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  min-height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
 `
 
-const HeroTitle = styled.h1`
-  margin-top: 0;
-  color: #fff;
-  font-size: 48px;
+const HeroTitle = styled(Heading)`
+  margin-top: 32px;
+  margin-bottom: 24px;
+  color: #363636;
+  font-size: 32px;
   text-align: center;
 
   @media screen and (min-width: 500px) {
-    font-size: 60px;
+    font-size: 64px;
   }
 `
 
@@ -70,6 +70,7 @@ const ProjectCard = Card.extend`
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 
   @media screen and (max-width: 400px) {
+    box-shadow: none;
     grid-template-columns: 1fr;
     border-radius: 0;
     margin-left: calc(50% - 50vw);

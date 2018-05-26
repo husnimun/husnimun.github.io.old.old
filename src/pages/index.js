@@ -6,6 +6,14 @@ import { StyledAnchor, StyledLink } from '../components/styled/Link'
 const dark = '#171a20'
 const light = '#f6f6f6'
 
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  margin-top: -73px;
+`
+
 const headingLarge = css`
   font-size: 48px;
   line-height: 1.2;
@@ -20,25 +28,6 @@ const bodyMedium = css`
   @media screen and (min-width: 768px) {
     font-size: 18px;
   }
-`
-
-const OuterWrapper = styled.div`
-  padding: 8px;
-  min-height: 500px;
-  height: 100vh;
-  background: linear-gradient(180deg, #6c5add 0%, #36c9e8 100%);
-
-  @media screen and (min-width: 768px) {
-    padding: 12px;
-  }
-`
-
-const InnerWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: ${dark};
-  height: 100%;
 `
 
 const About = styled.div`
@@ -86,12 +75,12 @@ const SocialListItem = styled.li`
   margin-right: 6px;
 
   > a {
-    color: #a6a6a6;
+    color: ${light};
     transition: color 300ms ease;
   }
 
   > a:hover {
-    color: #eee;
+    color: #a6a6a6;
   }
 `
 
@@ -102,49 +91,44 @@ const Email = styled.div`
 `
 
 const IndexPage = () => (
-  <OuterWrapper>
-    <InnerWrapper>
-      <About>
-        <AboutContent>
-          <AboutHeading element="h1">Husni Munaya</AboutHeading>
-          <AboutDescription>
-            Love working on the web stack and passionate about front-end
-            development
-          </AboutDescription>
-        </AboutContent>
-      </About>
-      <Contact>
-        <Social>
-          <SocialList>
-            <SocialListItem>
-              <a
-                href="https://www.linkedin.com/in/husni-munaya/"
-                target="_blank"
-              >
-                <i className="fab fa-linkedin" />
-              </a>
-            </SocialListItem>
-            <SocialListItem>
-              <a href="https://github.com/husnimun/" target="_blank">
-                <i className="fab fa-github" />
-              </a>
-            </SocialListItem>
-            <SocialListItem>
-              <a href="http://codepen.io/husnimun/" target="_blank">
-                <i className="fab fa-codepen" />
-              </a>
-            </SocialListItem>
-            <SocialListItem>
-              <a href="https://twitter.com/husnimun" target="_blank">
-                <i className="fab fa-twitter" />
-              </a>
-            </SocialListItem>
-          </SocialList>
-        </Social>
-        <Email>husnimunaya@gmail.com</Email>
-      </Contact>
-    </InnerWrapper>
-  </OuterWrapper>
+  <Wrapper>
+    <About>
+      <AboutContent>
+        <AboutHeading element="h1">Husni Munaya</AboutHeading>
+        <AboutDescription>
+          I enjoy working on the web stack and passionate about front-end
+          development
+        </AboutDescription>
+      </AboutContent>
+    </About>
+    <Contact>
+      <Social>
+        <SocialList>
+          <SocialListItem>
+            <a href="https://www.linkedin.com/in/husni-munaya/" target="_blank">
+              <i className="fab fa-linkedin" />
+            </a>
+          </SocialListItem>
+          <SocialListItem>
+            <a href="https://github.com/husnimun/" target="_blank">
+              <i className="fab fa-github" />
+            </a>
+          </SocialListItem>
+          <SocialListItem>
+            <a href="http://codepen.io/husnimun/" target="_blank">
+              <i className="fab fa-codepen" />
+            </a>
+          </SocialListItem>
+          <SocialListItem>
+            <a href="https://twitter.com/husnimun" target="_blank">
+              <i className="fab fa-twitter" />
+            </a>
+          </SocialListItem>
+        </SocialList>
+      </Social>
+      <Email>husnimunaya@gmail.com</Email>
+    </Contact>
+  </Wrapper>
 )
 
 export default IndexPage

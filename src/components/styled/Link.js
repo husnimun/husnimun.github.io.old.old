@@ -40,9 +40,13 @@ const underlineStyles = ({ light }) => {
 }
 
 export const StyledAnchor = styled(({ light, ...rest }) => <a {...rest} />)`
-  ${baseStyles} ${fontColor} ${underlineStyles};
+  ${baseStyles};
+  ${fontColor};
+  ${underlineStyles};
 `
 
 export const StyledLink = styled(({ light, ...rest }) => <Link {...rest} />)`
-  ${baseStyles} ${fontColor} ${underlineStyles};
+  ${baseStyles};
+  ${fontColor};
+  ${underlineStyles};
 `
