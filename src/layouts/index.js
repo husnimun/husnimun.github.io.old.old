@@ -20,9 +20,8 @@ const OuterPadding = ({ isHome }) => {
 
 const OuterWrapper = styled.div`
   ${OuterPadding};
-  transition: 300ms ease;
-  min-height: 500px;
   height: 100vh;
+  transition: padding 300ms ease;
   background: linear-gradient(180deg, #6c5add 0%, #36c9e8 100%);
 `
 const InnerWrapper = styled.div`

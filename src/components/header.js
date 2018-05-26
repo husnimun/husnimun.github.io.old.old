@@ -30,7 +30,7 @@ const NavLink = styled(Link)`
     background: #36c9e8;
     bottom: -10px;
     left: 0;
-    transform: scaleY(0);
+    opacity: 0;
     transform-origin: 0 0;
     transition: 300ms ease;
   }
@@ -38,7 +38,7 @@ const NavLink = styled(Link)`
   &:hover,
   &.active {
     &:before {
-      transform: scaleY(1);
+      opacity: 1;
     }
   }
 `

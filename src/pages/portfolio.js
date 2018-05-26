@@ -8,6 +8,7 @@ import indohunImg from '../images/project/indohun.png'
 import bpomImg from '../images/project/bpom.png'
 import travelBuddyImg from '../images/project/tb.png'
 import { dark } from '../styles/Color'
+import { ButtonLink } from '../components/styled/Button'
 
 const Wrapper = styled.div`
   background-color: #f2f2f2;
@@ -123,7 +124,7 @@ const Pen = styled.div`
 const SecondPage = () => (
   <Wrapper>
     <Hero>
-      <HeroTitle>Portfolio of Husni Munaya</HeroTitle>
+      <HeroTitle element="h1">Portfolio</HeroTitle>
     </Hero>
 
     <Grid>
@@ -148,9 +149,9 @@ const SecondPage = () => (
                 sprint as a full-stack web developer, working on both back end
                 and front end. The project is built with Laravel and Vue.
               </p>
-              <StyledAnchor href="https://travelbuddy.id" target="_blank">
+              <ButtonLink href="https://travelbuddy.id" target="_blank">
                 View Project
-              </StyledAnchor>
+              </ButtonLink>
             </ProjectDescription>
           </Project>
         </ProjectCard>
@@ -165,9 +166,9 @@ const SecondPage = () => (
                 Worked as web developer and collaborated with designers to
                 develop a WordPress theme for Indohun Profile Website.
               </p>
-              <StyledAnchor href="https://indohun.org" target="_blank">
+              <ButtonLink href="https://indohun.org" target="_blank">
                 View Project
-              </StyledAnchor>
+              </ButtonLink>
             </ProjectDescription>
           </Project>
         </ProjectCard>
@@ -183,9 +184,9 @@ const SecondPage = () => (
                 project manager and designer to build web-based reporting system
                 for BPOM.
               </p>
-              <StyledAnchor href="http://rb.pom.go.id/modul" target="_blank">
+              <ButtonLink href="http://rb.pom.go.id/modul" target="_blank">
                 View Project
-              </StyledAnchor>
+              </ButtonLink>
             </ProjectDescription>
           </Project>
         </ProjectCard>

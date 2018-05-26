@@ -1,6 +1,8 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
 import Link from 'gatsby-link'
+import { purple, blue } from '../../styles/Color'
+import { rgba } from 'polished'
 
 const baseStyles = css`
   position: relative;
@@ -9,7 +11,7 @@ const baseStyles = css`
   z-index: 100;
 
   &:hover {
-    color: #5f5f5f;
+    background: ${rgba(blue, 0.4)};
   }
 `
 
@@ -21,19 +23,16 @@ const fontColor = ({ light }) => {
 }
 
 const underlineStyles = ({ light }) => {
-  const backgroundColor = light
-    ? 'rgba(255, 255, 255, 0.8)'
-    : 'rgba(72, 57, 120, 0.6)'
+  const backgroundColor = light ? 'rgba(255, 255, 255, 0.8)' : purple
   return css`
+    background: ${rgba(blue, 0.2)};
     &:before {
       content: '';
       position: absolute;
       width: calc(100%);
-      height: 3px;
-      border-radius: 2px;
+      height: 1px;
       background: ${backgroundColor};
       bottom: 0px;
-      z-index: -1;
       left: 0;
     }
   `
