@@ -1,33 +1,68 @@
 import React from 'react'
-import styled from 'styled-components'
-import background from '../images/bg.jpg'
+import styled, { css } from 'styled-components'
+import Heading from '../components/typography/Heading'
 import { StyledAnchor, StyledLink } from '../components/styled/Link'
 
-const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  min-height: 500px;
-  background-image: url(${background});
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-`
+const dark = '#171a20'
+const light = '#f6f6f6'
 
-const About = styled.div`
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
-  text-align: center;
-
-  @media screen and (min-width: 600px) {
-    font-size: 22px;
+const headingLarge = css`
+  font-size: 48px;
+  line-height: 1.2;
+  @media screen and (min-width: 768px) {
+    font-size: 64px;
   }
 `
 
-const AboutContent = styled.div``
+const bodyMedium = css`
+  font-size: 16px;
+  line-height: 1.4;
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+  }
+`
+
+const OuterWrapper = styled.div`
+  padding: 8px;
+  min-height: 500px;
+  height: 100vh;
+  background: linear-gradient(180deg, #6c5add 0%, #36c9e8 100%);
+
+  @media screen and (min-width: 768px) {
+    padding: 12px;
+  }
+`
+
+const InnerWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: ${dark};
+  height: 100%;
+`
+
+const About = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+`
+
+const AboutContent = styled.div`
+  padding: 16px;
+`
+
+const AboutHeading = styled(Heading)`
+  ${headingLarge};
+  margin-bottom: 24px;
+  color: ${light};
+`
+
+const AboutDescription = styled.p`
+  ${bodyMedium};
+  color: ${light};
+  max-width: 500px;
+`
 
 const Contact = styled.div`
   padding-top: 32px;
@@ -61,61 +96,55 @@ const SocialListItem = styled.li`
 `
 
 const Email = styled.div`
-  color: #c2c2c2;
+  ${bodyMedium};
+  color: ${light};
   text-align: center;
 `
 
 const IndexPage = () => (
-  <Wrapper>
-    <About>
-      <AboutContent>
-        <p>
-          Hello, my name is Husni Munaya.<br />I'm a front-end developer from
-          Indonesia
-        </p>
-        <p>
-          You can take a look at my{' '}
-          <StyledAnchor
-            light
-            href="https://www.dropbox.com/s/5ic38ovf1h0fnv7/Resume-Husni-Munaya.pdf?dl=0"
-            target="_blank"
-          >
-            Resume
-          </StyledAnchor>, or see my{' '}
-          <StyledLink light to="/portfolio">
-            Portfolio.
-          </StyledLink>
-        </p>
-      </AboutContent>
-    </About>
-    <Contact>
-      <Social>
-        <SocialList>
-          <SocialListItem>
-            <a href="https://www.linkedin.com/in/husni-munaya/" target="_blank">
-              <i className="fab fa-linkedin" />
-            </a>
-          </SocialListItem>
-          <SocialListItem>
-            <a href="https://github.com/husnimun/" target="_blank">
-              <i className="fab fa-github" />
-            </a>
-          </SocialListItem>
-          <SocialListItem>
-            <a href="http://codepen.io/husnimun/" target="_blank">
-              <i className="fab fa-codepen" />
-            </a>
-          </SocialListItem>
-          <SocialListItem>
-            <a href="https://twitter.com/husnimun" target="_blank">
-              <i className="fab fa-twitter" />
-            </a>
-          </SocialListItem>
-        </SocialList>
-      </Social>
-      <Email>husnimunaya@gmail.com</Email>
-    </Contact>
-  </Wrapper>
+  <OuterWrapper>
+    <InnerWrapper>
+      <About>
+        <AboutContent>
+          <AboutHeading element="h1">Husni Munaya</AboutHeading>
+          <AboutDescription>
+            Love working on the web stack and passionate about front-end
+            development
+          </AboutDescription>
+        </AboutContent>
+      </About>
+      <Contact>
+        <Social>
+          <SocialList>
+            <SocialListItem>
+              <a
+                href="https://www.linkedin.com/in/husni-munaya/"
+                target="_blank"
+              >
+                <i className="fab fa-linkedin" />
+              </a>
+            </SocialListItem>
+            <SocialListItem>
+              <a href="https://github.com/husnimun/" target="_blank">
+                <i className="fab fa-github" />
+              </a>
+            </SocialListItem>
+            <SocialListItem>
+              <a href="http://codepen.io/husnimun/" target="_blank">
+                <i className="fab fa-codepen" />
+              </a>
+            </SocialListItem>
+            <SocialListItem>
+              <a href="https://twitter.com/husnimun" target="_blank">
+                <i className="fab fa-twitter" />
+              </a>
+            </SocialListItem>
+          </SocialList>
+        </Social>
+        <Email>husnimunaya@gmail.com</Email>
+      </Contact>
+    </InnerWrapper>
+  </OuterWrapper>
 )
 
 export default IndexPage

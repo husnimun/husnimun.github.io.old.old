@@ -20,7 +20,7 @@ const Layout = ({ children, data }) => (
     <Helmet>
       <link
         rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=PT+Sans:400,700"
+        href="https://fonts.googleapis.com/css?family=PT+Sans|Merriweather:700"
       />
       <script
         defer
