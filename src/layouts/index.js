@@ -44,12 +44,6 @@ const Layout = ({ children, data, location }) => (
         rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700"
       />
-      <script
-        defer
-        src="https://use.fontawesome.com/releases/v5.0.12/js/all.js"
-        integrity="sha384-Voup2lBiiyZYkRto2XWqbzxHXwzcm4A5RfdfG6466bu5LqjwwrjXCMBQBLMWh7qR"
-        crossorigin="anonymous"
-      />
     </Helmet>
     <OuterWrapper isHome={location.pathname === '/'}>
       <InnerWrapper>

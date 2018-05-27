@@ -2,6 +2,11 @@ import React from 'react'
 import styled, { css } from 'styled-components'
 import Heading from '../components/typography/Heading'
 import { StyledAnchor, StyledLink } from '../components/styled/Link'
+import FontAwesomeIcon from '@fortawesome/react-fontawesome'
+import faLinkedin from '@fortawesome/fontawesome-free-brands/faLinkedin'
+import faGithub from '@fortawesome/fontawesome-free-brands/faGithub'
+import faCodepen from '@fortawesome/fontawesome-free-brands/faCodepen'
+import faTwitter from '@fortawesome/fontawesome-free-brands/faTwitter'
 
 const dark = '#171a20'
 const light = '#f6f6f6'
@@ -106,22 +111,22 @@ const IndexPage = () => (
         <SocialList>
           <SocialListItem>
             <a href="https://www.linkedin.com/in/husni-munaya/" target="_blank">
-              <i className="fab fa-linkedin" />
+              <FontAwesomeIcon icon={faLinkedin} />
             </a>
           </SocialListItem>
           <SocialListItem>
             <a href="https://github.com/husnimun/" target="_blank">
-              <i className="fab fa-github" />
+              <FontAwesomeIcon icon={faGithub} />
             </a>
           </SocialListItem>
           <SocialListItem>
             <a href="http://codepen.io/husnimun/" target="_blank">
-              <i className="fab fa-codepen" />
+              <FontAwesomeIcon icon={faCodepen} />
             </a>
           </SocialListItem>
           <SocialListItem>
             <a href="https://twitter.com/husnimun" target="_blank">
-              <i className="fab fa-twitter" />
+              <FontAwesomeIcon icon={faTwitter} />
             </a>
           </SocialListItem>
         </SocialList>
