@@ -42,7 +42,7 @@ const Layout = ({ children, data, location }) => (
     <Helmet>
       <link
         rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Merriweather:700"
+        href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700"
       />
       <script
         defer

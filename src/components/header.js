@@ -19,7 +19,6 @@ const NavLink = styled(Link)`
   text-decoration: none;
   margin-right: 12px;
   margin-left: 12px;
-  font-weight: 700;
   color: ${light};
 
   &:before {

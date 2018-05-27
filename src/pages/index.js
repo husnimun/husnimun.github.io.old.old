@@ -50,7 +50,7 @@ const AboutHeading = styled(Heading)`
 const AboutDescription = styled.p`
   ${bodyMedium};
   color: ${light};
-  max-width: 500px;
+  max-width: 400px;
 `
 
 const Contact = styled.div`
@@ -96,8 +96,8 @@ const IndexPage = () => (
       <AboutContent>
         <AboutHeading element="h1">Husni Munaya</AboutHeading>
         <AboutDescription>
-          I enjoy working on the web stack and passionate about front-end
-          development
+          Love to work with the web stack. Passionate about front-end
+          development.
         </AboutDescription>
       </AboutContent>
     </About>

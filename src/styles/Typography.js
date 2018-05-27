@@ -9,9 +9,9 @@ export const headingLarge = css`
 `
 
 export const bodyMedium = css`
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.4;
   @media screen and (min-width: 768px) {
-    font-size: 18px;
+    font-size: 16px;
   }
 `

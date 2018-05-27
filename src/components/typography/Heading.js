@@ -5,7 +5,7 @@ import HtmlElement from '../HtmlElement'
 
 const baseStyles = css`
   margin-top: 0;
-  font-family: 'Merriweather', serif;
+  font-family: 'Fira Sans', serif;
   font-weight: 700;
 `
 const HeadingElement = styled(HtmlElement)`

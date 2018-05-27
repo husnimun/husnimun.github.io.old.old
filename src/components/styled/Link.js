@@ -11,7 +11,7 @@ const baseStyles = css`
   z-index: 100;
 
   &:hover {
-    background: ${rgba(blue, 0.4)};
+    background: ${rgba(blue, 0.6)};
   }
 `
 

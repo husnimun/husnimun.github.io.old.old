@@ -8,6 +8,7 @@ import indohunImg from '../images/project/indohun.png'
 import bpomImg from '../images/project/bpom.png'
 import travelBuddyImg from '../images/project/tb.png'
 import { dark } from '../styles/Color'
+import { bodyMedium } from '../styles/Typography'
 import { ButtonLink } from '../components/styled/Button'
 
 const Wrapper = styled.div`
@@ -42,7 +43,7 @@ const Card = styled.div`
 `
 
 const Grid = styled.div`
-  max-width: 960px;
+  max-width: 680px;
   margin: 0 auto;
   padding-left: 16px;
   padding-right: 16px;
@@ -68,7 +69,7 @@ const ProjectsTitle = styled.h1`
 const ProjectCard = Card.extend`
   margin-bottom: 32px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: 1fr;
 
   @media screen and (max-width: 400px) {
     box-shadow: none;
@@ -99,18 +100,13 @@ const ProjectImage = styled.div`
 
   img {
     width: 100%;
-    max-width: 500px;
+    max-width: 680px;
   }
 `
 
 const ProjectDescription = styled.div`
   color: #444;
-  font-size: 16px;
-  line-height: 1.4;
-
-  @media screen and (min-width: 600px) {
-    font-size: 18px;
-  }
+  ${bodyMedium};
 `
 
 const Pen = styled.div`
