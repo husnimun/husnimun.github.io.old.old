@@ -12,7 +12,7 @@ import { bodyMedium } from '../styles/Typography'
 import { ButtonLink } from '../components/styled/Button'
 
 const Wrapper = styled.div`
-  background-color: #f2f2f2;
+  background-color: rgb(245, 245, 250);
 `
 
 const Hero = styled.div`
@@ -37,7 +37,8 @@ const HeroTitle = styled(Heading)`
 
 const Card = styled.div`
   background-color: #fff;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 5px 15px 0 rgba(37, 44, 97, 0.15),
+    0 2px 4px 0 rgba(93, 100, 148, 0.2);
   border-radius: 4px;
   padding: 24px 24px;
 `
@@ -72,11 +73,8 @@ const ProjectCard = Card.extend`
   grid-template-columns: 1fr;
 
   @media screen and (max-width: 400px) {
-    box-shadow: none;
-    grid-template-columns: 1fr;
-    border-radius: 0;
-    margin-left: calc(50% - 50vw);
-    margin-right: calc(50% - 50vw);
+    margin-left: calc(50% - 50vw + 12px);
+    margin-right: calc(50% - 50vw + 12px);
     margin-bottom: 24px;
   }
 `

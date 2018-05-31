@@ -5,7 +5,7 @@ import { StyledAnchor } from '../components/styled/Link'
 const StyledFooter = styled.footer`
   text-align: center;
   padding: 32px;
-  background-color: #dbdbdb;
+  background-color: hsl(240, 20%, 90%);
   color: #282a36;
   font-size: 14px;
   line-height: 1.7;
